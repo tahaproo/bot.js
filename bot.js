@@ -4026,7 +4026,7 @@ const cuttweet = [
 ]
  
 client.on('message', message => {
-  if (message.content.startsWith("+كت تويت")) {
+  if (message.content.startsWith("*كت تويت")) {
                if(!message.channel.guild) return message.reply('** This command only for servers**');
  var embed = new Discord.RichEmbed()
  .setColor('RANDOM')
@@ -4043,7 +4043,7 @@ client.on('message', message => {
 
 
  client.on('message', message => {
-   if (message.content.startsWith("+حب")) {
+   if (message.content.startsWith("*حب")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor(0xd3d0c4)
@@ -4130,7 +4130,7 @@ const Sra7a = [
     'صراحه  |  ما هي أمنياتك المُستقبلية؟‏',
 ]
   client.on('message', message => {
-if (message.content.startsWith('+صراحه')) {
+if (message.content.startsWith('*صراحه')) {
     if(!message.channel.guild) return message.reply('** This command only for servers **');
  var client= new Discord.RichEmbed()
  .setTitle("لعبة صراحة ..")
@@ -4147,7 +4147,7 @@ if (message.content.startsWith('+صراحه')) {
 
   client.on('message', message => {
   
-if(message.content.split(' ')[0] == '+srh'){
+if(message.content.split(' ')[0] == '*srh'){
        if (message.author.bot) return;
      if(!message.channel.guild) return;
                        
@@ -4184,7 +4184,7 @@ client.guilds.get(message.guild.id).members.get(user.id).sendEmbed(em)
 
 client.on('message', message => {
   
-if(message.content.split(' ')[0] == '+srh1'){
+if(message.content.split(' ')[0] == '*srh1'){
        if (message.author.bot) return;
      if(!message.channel.guild) return;
                        
@@ -4359,7 +4359,7 @@ client.on("message", message => {
             });
         }
         
-        if (message.content.startsWith('+quran-stop')) {
+        if (message.content.startsWith('*quran-stop')) {
                     if(!message.channel.guild) return message.reply('** This command only for servers **');
       
           const voiceChannel = message.member.voiceChannel;
@@ -4461,7 +4461,7 @@ client.on("message", message => {
       });
 
       client.on('message', message => {
-        if (message.content.startsWith('+alkursi')) {
+        if (message.content.startsWith('*alkursi')) {
                     if(!message.channel.guild) return message.reply('** This command only for servers **');
       
           const voiceChannel = message.member.voiceChannel;
@@ -4478,7 +4478,7 @@ client.on("message", message => {
             });
         }
         
-        if (message.content.startsWith('+alkursi-stop')) {
+        if (message.content.startsWith('*alkursi-stop')) {
                     if(!message.channel.guild) return message.reply('** This command only for servers **');
       
           const voiceChannel = message.member.voiceChannel;
