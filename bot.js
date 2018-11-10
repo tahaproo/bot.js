@@ -1157,7 +1157,7 @@ client.on('message', message => {
 
   var roleCreated = role.createdAt.toString().split(' ');
   const embed = new Discord.RichEmbed()
-  .setTitle("Gaint")
+  .setTitle("Crazy World")
   .setAuthor( '', '' )
   .setColor(0xFF8DFD)
   .setDescription(``)
@@ -3044,7 +3044,7 @@ message.react("📬")
       if(!msg.member.hasPermission('ADMINISTRATOR')) return      msg.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
       if(!msg.guild.member(client.user).hasPermission("MANAGE_ROLES")) return msg.reply("**I Don't Have `MANAGE_ROLES` Permission**").then(msg => msg.delete(6000))
 
-    msg.guild.roles.filter(msg => isNaN(msg)).forEach(Gaint => Gaint.delete())
+    msg.guild.roles.filter(msg => isNaN(msg)).forEach(CrazyWorld => gaint.delete())
     }
     });
       
@@ -3088,7 +3088,7 @@ ${args}
         if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
       if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
         let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-        let copy = "Gaint";
+        let copy = "CrazyWorld";
         let request = `Requested By ${message.author.username}`;
         if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
         msg.react('✅')
@@ -3955,7 +3955,7 @@ var prefix = "*";
         var args = message.content.split(" ").slice(1);
     if(message.content.startsWith(prefix + 'لو خيروك')) {
          var lo = new Discord.RichEmbed()
-     .setFooter(`©  Gaint™ `)
+     .setFooter(`©  CrazyWorld™ `)
 .setImage(viper[Math.floor(Math.random() * viper.length)])
 message.channel.sendEmbed(lo);
     }
