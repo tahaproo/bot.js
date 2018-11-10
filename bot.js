@@ -4135,7 +4135,7 @@ if (message.content.startsWith('*صراحه')) {
  var client= new Discord.RichEmbed()
  .setTitle("لعبة صراحة ..")
  .setColor('RANDOM')
-     .setFooter(`©  Gaint™ `)
+     .setFooter(`©  CrazyWorld™ `)
  .setDescription(`${Sra7a[Math.floor(Math.random() * Sra7a.length)]}`)
  .setImage("https://cdn.discordapp.com/attachments/371269161470525444/384103927060234242/125.png")
                  .setTimestamp()
